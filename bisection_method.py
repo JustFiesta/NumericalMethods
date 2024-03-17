@@ -2,7 +2,7 @@ def f(x):
     return x**3 + x - 1
 
 def bisection_method(f, a, b, tolerance):
-    if f(a) * f(b) > 0:
+    if f(a) * f(b) >= 0:
         print("Nie można zagwarantować istnienia pierwiastka w zadanym przedziale.")
         return None
     iterations = 0
